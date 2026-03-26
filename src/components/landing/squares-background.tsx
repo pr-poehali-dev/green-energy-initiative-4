@@ -35,7 +35,7 @@ export function Squares({
     if (!ctx) return
 
     // Set canvas background
-    canvas.style.background = "#060606"
+    canvas.style.background = "#1a0f05"
 
     const resizeCanvas = () => {
       const rect = canvas.getBoundingClientRect()
@@ -83,8 +83,8 @@ export function Squares({
         canvas.height / 2,
         Math.sqrt(Math.pow(canvas.width, 2) + Math.pow(canvas.height, 2)) / 2,
       )
-      gradient.addColorStop(0, "rgba(6, 6, 6, 0)")
-      gradient.addColorStop(1, "#060606")
+      gradient.addColorStop(0, "rgba(26, 15, 5, 0)")
+      gradient.addColorStop(1, "#1a0f05")
 
       ctx.fillStyle = gradient
       ctx.fillRect(0, 0, canvas.width, canvas.height)
